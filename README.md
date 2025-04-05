@@ -2,7 +2,7 @@
 
 Welcome to the *Emoji Memory Game* – a fun, animated card-flipping memory challenge powered by JavaScript, CSS3, and your brain cells 😌🧠  
 This game features flipping animations, sound effects, timer-based challenges, and level progression – all wrapped in a stylish neon-night aesthetic.
-🚀 [Play the Game Live](leafy-lamington-ae8fe9.netlify.app)
+🚀 [Play the Game Live](https://leafy-lamington-ae8fe9.netlify.app)
 ## 🌟 Features
 
 - 🃏 Flip-to-match emoji cards with full 3D animations
