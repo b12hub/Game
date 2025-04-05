@@ -76,7 +76,6 @@ body {
     box-shadow: 0 0 10px var(--accent-color);
 }
 
-
 #board {
     display: grid;
     gap: 12px;
@@ -141,9 +140,9 @@ body {
 
 .card.flipped {
     transform: rotateY(180deg);
-
 }
 
+/* Hide emoji by default, show when flipped */
 .card .card-back {
     font-size: 48px;  /* Big emoji size */
     display: flex;
@@ -155,7 +154,55 @@ body {
     transition: visibility 0.3s ease;
 }
 
-
 .card.flipped .card-back {
     visibility: visible;
 }
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+    #board {
+        gap: 8px;
+        padding: 10px 0;
+    }
+
+    .card {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .button-str {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .controls label,
+    .controls span {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .button-str {
+        width: 100%;
+        text-align: center;
+    }
+}
+.title { font-family: 'Arial', sans-serif; font-size: 36px; font-weight: bold; fill: #39ff14; }
