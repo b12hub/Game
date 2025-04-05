@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emoji Memory Game</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><text x='0' y='14' font-family='Arial' font-size='14' fill='%23fff'>🎮</text></svg>" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div id="game-title">
+        <text x="10" y="50" class="title">Emoji Memory Game</text>
+</div>
+
 <div class="controls">
+    <button id="start" class="button-str">Start Game</button>
     <span id="level-display"></span>
     <span id="timer-display"></span>
-    <button id="start" class="button-str">Start Game</button>
 </div>
 
 <div id="board"></div>
@@ -18,6 +24,6 @@
 <audio id="flip-sound" src="flip.mp3"></audio>
 <audio id="win-sound" src="won-game.wav"></audio>
 <audio id="lose-sound" src="losing-game.wav"></audio>
+
 <script src="game.js" defer></script>
 </body>
-</html>
